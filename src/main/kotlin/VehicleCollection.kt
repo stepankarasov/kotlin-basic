@@ -46,3 +46,5 @@ fun truck(function: TruckBuilder.() -> Unit): VehicleCollection.Truck = TruckBui
 
 inline fun <reified T : VehicleCollection> vehiclesCollectionName(vehiclesCollection: T): String =
     "Collection name is ${vehiclesCollection.name}"
+
+fun <T> printField(field: T): T = field
