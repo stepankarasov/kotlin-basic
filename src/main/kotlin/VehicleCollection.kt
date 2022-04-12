@@ -43,5 +43,6 @@ class TruckBuilder : VehicleCollectionBuilder() {
 fun car(function: CarBuilder.() -> Unit): VehicleCollection.Car = CarBuilder().apply(function).build()
 
 fun truck(function: TruckBuilder.() -> Unit): VehicleCollection.Truck = TruckBuilder().apply(function).build()
+
 inline fun <reified T : VehicleCollection> vehiclesCollectionName(vehiclesCollection: T): String =
     "Collection name is ${vehiclesCollection.name}"
