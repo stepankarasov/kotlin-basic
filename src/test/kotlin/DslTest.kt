@@ -45,6 +45,8 @@ class DslTest {
             carsCollection.vehiclesList.first().price == 600000
         )
         assertEquals("Collection name is My cars", carsCollectionName)
+
+        printField(carsCollection.name)
     }
 
     @Test
