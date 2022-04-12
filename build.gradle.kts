@@ -1,9 +1,9 @@
 plugins {
-    kotlin("jvm") version "1.5.10"
+    kotlin("jvm") version "1.6.0"
 }
 
 group = "ru.otus.okb.first"
-version = "0.0.1"
+version = "0.0.3"
 
 repositories {
     mavenCentral()
@@ -11,6 +11,8 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib"))
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0")
 
     testImplementation(kotlin("test-junit"))
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0")
 }
